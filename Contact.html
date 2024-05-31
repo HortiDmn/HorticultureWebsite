@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunman Secondary Horticultural Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+<nav id="navv">
+    <ul>
+      <li id="close"><img src="./images/close.svg"></li>
+      <li><a id="list1" href="./Home.html">Home</a></li>
+      <li><a id="list2"href="./About.html">About us</a></li>
+      <li><a id="list3" href="./Contact.html">Contact</a></li>
+    </ul>
+</nav>
+<header id="">
+  <h1 id="where">Where to find us</h1>
+</header>
+<body>
+    <button id="opnnavbtn"><img id="imginnavbtn"src="images/menu.svg" alt="the menu"></button>
+    <div id="findus">
+      <h1>You can find us at the L1 staircase, near the counselling room.</h1>
+    </div>
+</body>
+<footer>
+    <p>© 2024 Dunman Secondary School</p>
+</footer>
+<script>
+  var open = false;
+  var close = false;
+document.getElementById("opnnavbtn").onclick = function openn() {
+  document.getElementById("navv").style.width = 40 + "%";
+  document.getElementById("list1").style.display = "block";
+  document.getElementById("list2").style.display = "block";
+  document.getElementById("list3").style.display = "block";
+  document.getElementById("close").style.display = "block";
+};
+document.getElementById("close").onclick = function closee() {
+  document.getElementById("navv").style.width = 0;
+  document.getElementById("list1").style.display = "none";
+  document.getElementById("list2").style.display = "none";
+  document.getElementById("list3").style.display = "none";
+  document.getElementById("close").style.display = "none";
+};
+</script>
+</html>

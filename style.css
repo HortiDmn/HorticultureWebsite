@@ -1,0 +1,380 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaisei+Opti&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+html {
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #E8F8FF;
+    margin: 0;
+    padding: 0;   
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/*jiben html stuff*/
+
+main > * {
+    display: flexbox;
+    text-align: center;
+}  
+
+@media (max-width: 600px) {
+    nav {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1001;
+        position: fixed;
+        background-color: white;
+        width: 0%;
+        list-style-type: none;
+        transition: 0.5s;
+    }
+    ul {
+        padding-left: 0;
+        display: inline;
+        text-align: center;
+    }
+    
+    li {
+        margin-top: 50px;
+        list-style-type: none;
+        margin-bottom: 50px;
+        text-decoration: none;
+        display: block;
+        font-size: 2em;
+    }
+
+    #list1,#list2,#list3 {
+        transition: 1s;
+        display: none;
+    }
+    #close {
+        margin-right: 70%;
+        display: none;
+    }
+}
+
+
+@media (min-width: 601px) {
+    ul {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    li {
+        display: inline-block;
+        list-style-type: none;
+        margin-bottom: 2vh;
+        text-decoration: none;
+        text-align: center;
+        padding: 0;
+        padding-left: 5vw;
+        margin: 0;
+    }
+    a {
+        display: block;
+    }
+    #close {
+        display: none;
+    }
+}
+
+
+#MainTitle {
+    text-align: left;
+    margin-left: 10vw;
+    margin-bottom: 10%;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: white;
+    font-style: normal;
+}
+
+@media (max-width: 600px) {
+    #MainTitle {
+    margin-bottom: 40%;
+    font-size: 2.5em;
+}
+}
+
+#Start {
+    background-image: url(./images/pic1\ \(1\).jpg);
+    background-size: cover;
+    padding: 5vh 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-bottom: 10vh;
+    box-shadow: rgb(0, 0, 0, 0.5) 0px 10px 7px;
+}
+
+#joinus {
+    position: relative;
+    margin-left: 10vw;
+    background-color: whitesmoke;
+    border-radius: 22px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    transition: 0.5s;
+    border: white;
+    font-size: 1em;
+    display: inline;
+}
+
+@media (max-width: 600px) {
+    #joinus {
+        font-size: 1.25em;
+        padding-left: 2.25em;
+        padding-right: 2.25em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+}
+}
+
+
+#joinus:hover {
+    background-color: black;
+    border: black;
+    color: white;
+}
+
+#tagline {
+    margin-top: 50px;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+#sp {
+    margin-right: 25vw;
+    font-size: 1.5em;
+}
+
+#spd {
+    display: grid;
+    align-items: center;
+    justify-content: center;  
+    grid-row: 1;
+    grid-template-columns: 50vw 50vw;
+    margin-bottom: 10vh;
+}
+
+#fpd {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1;
+    grid-template-columns: 50vw 50vw;
+}
+
+
+#fp {
+    margin-left: 25vw;
+    font-size: 1.5em;    
+}
+
+@media (max-width: 600px) {
+    #sp,#fp {
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 1.2em;
+    }
+    #spd, #fpd {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-row: 2;
+        grid-template-columns: 100vw;
+    }
+    .imgp {
+        order: -1;
+    }
+}
+
+.imgp {
+    left: 50%;
+    margin: auto;
+    height: 35vh;
+    width: 35vh;
+    display: flex;
+    border-radius: 5px;
+}
+
+#lm {
+    background-color: white;
+    border-radius: 22px;
+    transition: 0.5s;
+    border: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#dlm {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+#tlm {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+    #opnnavbtn {
+        position:fixed;
+        top: 5vh;
+        left: 3vh;
+        background-color: white;
+        border: black 0px solid;
+        border-radius: 30%;
+        margin: 0;
+        scale: 200%;
+        z-index: 1000;
+    }
+    #imginnavbtn {
+        display: inherit;
+        scale: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    #opnnavbtn {
+        height: 0px;
+        width: 0px;
+        padding: 0;
+        border: 0;
+    }
+    #imginnavbtn {
+        width: 0%;
+    }
+}
+
+
+.aq {
+    width: 100%;
+    border-radius: 24px;
+    position: relative;
+    z-index: 1;
+    height: 40vh;
+    width: 70vh;
+    box-shadow: inset rgb(0, 0, 0, 1) 0 -7vh 25px -10px;
+}
+
+.q {
+    color: white;
+    border-radius: 24px;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+
+}
+
+#quotes {
+    overflow: scroll;
+    display: block;
+    min-height: min-content;
+    height: fit-content;
+}
+
+#quotes2 {
+    display: inline-flex;
+    min-height: min-content;
+    height: fit-content;
+}
+
+@media (max-width: 600px) {
+
+}
+
+#quote1 {
+    background-image: url(./images/pic1\ \(2\).jpg);
+}
+
+#quote2 {
+    background-image: url(./images/pic1\ \(4\).jpg);
+}
+
+#quote3 {
+    background-image: url(./images/pic1\ \(5\).jpg);
+}
+
+.qimg {
+    color:red;
+}
+
+#bottom-ask {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+footer, p {
+    position: static;
+    bottom: 0;
+    margin: 0;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5vh 0;
+}
+
+/*
+* {
+    outline: 1px solid #f00 !important;
+  }
+*/
+
+/* Contact*/
+
+#where {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10%;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: normal;
+} 
+
+#findus {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-bottom: 10vh;
+}
+
+/* About  */

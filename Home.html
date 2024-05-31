@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunman Secondary Horticultural Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+<nav id="navv">
+    <ul>
+      <li id="close"><img src="./images/close.svg"></li>
+      <li><a id="list1" href="./Home.html">Home</a></li>
+      <li><a id="list2"href="./About.html">About us</a></li>
+      <li><a id="list3" href="./Contact.html">Contact</a></li>
+    </ul>
+</nav>
+<header id="Start">
+    <h1 id="MainTitle">Dunman Secondary Horticulture Club</h1>
+    <a id="joinus"  href="./Contact.html">Join Us!</a>
+    <img>
+</header>
+<body>
+    <button id="opnnavbtn"><img id="imginnavbtn"src="images/menu.svg" alt="the menu"></button>
+    <main>
+      <h2 id="tagline">Here to enhance your secondary school experience.</h2>
+      <h1>Flexible Schedule</h1>
+      <div id="fpd">
+
+        <h4 id="fp">Horti club has a very flexible schedule meaning you can join anytime in a week and can thus still spread out your homework and studies while still having a break by gardening or learning about flora and fauna!</h5>
+          <img class="imgp" src="./images/pic1 (3).jpg">
+        </div>
+      <h1>Meet new friends</h1>
+      <div id="spd">
+      <img class="imgp" src="./images/pic1 (5).jpg">
+      <h4 id="sp"> Horti Club helps you meet people with similar interests in gardening whether they be in different levels, you can all chat and get to know one another while also gardening!</h5>
+      </div>
+      <br>
+      <div id="dlm">
+        <button id="lm"> <a id="tlm" src="./About.html">Learn More</a> <img id="lmi" src="images/next.svg"></button>
+      </div>
+      <div id="quotes">
+        <div id="quotes2">
+        <figure class="aq" id="quote1">
+          <figcaption class="q"><quote>dksdk</quote></figcaption>
+        </figure>
+        <figure class="aq" id="quote2">
+          <figcaption class="q"><quote>dksdk</quote></figcaption>
+        </figure>
+        <figure class="aq" id="quote3">
+          <figcaption class="q"><quote>dksdk</quote></figcaption>
+        </figure>
+        </div>
+      </div>
+    </main>
+    <div id="bottom-ask">
+      <h1>Ready to Join?</h1>
+      <h1>Meet us at L1 Staircase at the counselling room.</h1>
+    </div>
+</body>
+<footer>
+    <p>© 2024 Dunman Secondary School</p>
+</footer>
+<script>
+  var open = false;
+  var close = false;
+document.getElementById("opnnavbtn").onclick = function openn() {
+  document.getElementById("navv").style.width = 40 + "%";
+  document.getElementById("list1").style.display = "block";
+  document.getElementById("list2").style.display = "block";
+  document.getElementById("list3").style.display = "block";
+  document.getElementById("close").style.display = "block";
+};
+document.getElementById("close").onclick = function closee() {
+  document.getElementById("navv").style.width = 0;
+  document.getElementById("list1").style.display = "none";
+  document.getElementById("list2").style.display = "none";
+  document.getElementById("list3").style.display = "none";
+  document.getElementById("close").style.display = "none";
+};
+</script>
+</html>
