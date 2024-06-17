@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunman Secondary Horticultural Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+<nav id="navv">
+    <ul>
+      <li id="close"><img src="./images/close.svg"></li>
+      <li><a id="list1" href="./index.html">Home</a></li>
+      <li><a id="list2"href="./About.html">About us</a></li>
+      <li><a id="list3" href="./Contact.html">Contact</a></li>
+    </ul>
+</nav>
+<body>
+    <button id="opnnavbtn"><img id="imginnavbtn"src="images/menu.svg" alt="the menu"></button>
+      <h1 class="where" id="textwhoweare" >Who we are</h1>
+      <div id="whowe"></div>
+      <h5 id="WWWpara">For those interested in gardening, you’ve come to the right place! Horticulture club aims to bring out your skills and talents as you work on our plants. We mainly work on the nursery in  Level 1 near the Sec 4 classrooms, but we also work on those near the driveway. In Horticulture club, we learn gardening basics such as repotting, pruning, even landscaping and much more! Come enjoy making new friends with our members and try your hand at helping with the garden!
+      </h5>
+      <h1 class="where">Our leaders</h1>
+      <h3 class="leaders">Teacher In Charge - Mr James</h3>
+      <h3 class="leaders">Chairperson - Kimmi</h3>
+      <h3 class="leaders">Vice-Chairperson - Charlotte</h3>
+      <h3 class="leaders">Secretary - Alysia</h3>
+      <h3 class="leaders">Assistant - Anna</h3>
+  </body>
+<footer>
+  Made By Brendan
+    <p>© 2024 Dunman Secondary School</p>
+</footer>
+<script>
+  var open = false;
+  var close = false;
+document.getElementById("opnnavbtn").onclick = function openn() {
+  document.getElementById("navv").style.width = 40 + "%";
+  document.getElementById("list1").style.display = "block";
+  document.getElementById("list2").style.display = "block";
+  document.getElementById("list3").style.display = "block";
+  document.getElementById("close").style.display = "block";
+};
+document.getElementById("close").onclick = function closee() {
+  document.getElementById("navv").style.width = 0;
+  document.getElementById("list1").style.display = "none";
+  document.getElementById("list2").style.display = "none";
+  document.getElementById("list3").style.display = "none";
+  document.getElementById("close").style.display = "none";
+};
+</script>
+</html>
