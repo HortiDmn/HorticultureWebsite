@@ -261,7 +261,7 @@ main > * {
 }
 
 #dlm {
-    width: 200%;
+    width: 100%;
     justify-content: center;
     display: inline-flex;
     text-align: center;
