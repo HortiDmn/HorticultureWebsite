@@ -261,7 +261,7 @@ main > * {
 }
 
 #dlm {
-    width: 100%;
+    width: 200%;
     justify-content: center;
     display: inline-flex;
     text-align: center;
@@ -273,12 +273,12 @@ main > * {
     #opnnavbtn {
         position:fixed;
         top: 5%;
-        left: 3%;
+        left: 10%;
         background-color: white;
         border: black 0px solid;
         border-radius: 30%;
         margin: 0;
-        scale: 100%;
+        scale: 200%;
         z-index: 1000;
     }
     #imginnavbtn {
