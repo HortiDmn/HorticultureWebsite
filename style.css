@@ -278,7 +278,7 @@ main > * {
         border: black 0px solid;
         border-radius: 30%;
         margin: 0;
-        scale: 200%;
+        scale: 100%;
         z-index: 1000;
     }
     #imginnavbtn {
